@@ -3,24 +3,24 @@ using System.Collections.Generic;
 class Cliente{
   public List<Cliente> listaCliente = new List<Cliente>();
 
-  string cNome;
+  string CNome;
   public string getNome(){
-    return cNome;
+    return CNome;
   }
 
-  string nomeRua;
+  string NomeDaRua;
   public string getRua(){
-    return nomeRua;
+    return NomeDaRua;
   }
 
-  int numeroRua;
+  int NúmeroDaRua;
   public int getRuaN(){
-    return numeroRua;
+    return NúmeroDaRua;
   }
 
   public Cliente(string a, string b, int c){
-    cNome = a;
-    nomeRua = b;
-    numeroRua = c;
+    CNome = a;
+    NomeDaRua = b;
+    NúmeroDaRua = c;
   }
 }

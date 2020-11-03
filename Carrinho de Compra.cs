@@ -1,31 +1,31 @@
 using System.Collections.Generic;
 
 class Carrinho{
-  string nomeCliente, nomeProduto;
-  int quantidade;
-  double valor;
+  string NomeDoCliente, NomeDoProduto;
+  int Quantidade;
+  double Valor;
   public List<Carrinho> listaCar = new List<Carrinho>();
 
   public string getCliente(){
-    return nomeCliente;
+    return NomeDoCliente;
   }
 
   public string getProduto(){
-    return nomeProduto;
+    return NomeDoProduto;
   }
 
   public int getQuantidade(){
-    return quantidade;
+    return Quantidade;
   }
 
   public double getValor(){
-    return valor;
+    return Valor;
   }
 
   public Carrinho(string n, string p, int q, double v){
-    nomeCliente = n;
-    nomeProduto = p;
-    quantidade = q;
-    valor = v;
+    NomeDoCliente = n;
+    NomeDoProduto = p;
+    Quantidade = q;
+    Valor = v;
   }
 }

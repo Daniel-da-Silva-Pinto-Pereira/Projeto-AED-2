@@ -3,21 +3,21 @@ using System.Collections.Generic;
 
 class MainClass {
   public static void Main (string[] args) {
-    string nome, rua, pagar, continuar = "S";
-    int numeroRua, cp, quni, quniOrigin;
+    string Nome, Rua, Pagar, continuar = "S";
+    int NúmeroDaRua, cp, quni, quniOrigin;
     double ValorTotal = 0; 
     Carrinho car = new Carrinho("NomeCliente", "NomeProduto", 1, 10);
     Cliente cli = new Cliente("Nome", "Rua", 0);
     Loja JJ = new Loja();
 
     Console.Write("Informe o seu Nome: ");
-    nome = Console.ReadLine();
+    Nome = Console.ReadLine();
     Console.Write("Informe o Nome da sua Rua: ");
-    rua = Console.ReadLine();
+    Rua = Console.ReadLine();
     Console.Write("Informe o Número da Casa: ");
-    numeroRua = int.Parse(Console.ReadLine());
+    NúmeroDaRua = int.Parse(Console.ReadLine());
 
-    cli = new Cliente(nome, rua, numeroRua);
+    cli = new Cliente(Nome, Rua, NúmeroDaRua);
     cli.listaCliente.Add(cli);
 
     Console.WriteLine();
@@ -48,9 +48,9 @@ class MainClass {
       if(continuar == "N"){
         Console.WriteLine("Deseja gerar um boleto para efetuar o pagamento S/N?");
         Console.WriteLine("Valor total: R$"+ ValorTotal);
-        pagar = Console.ReadLine();
+        Pagar = Console.ReadLine();
 
-        if(pagar == "S"){
+        if(Pagar == "S"){
 
           Console.WriteLine("Pressione qualquer tecla para ver a lista de produtos adquiridos");
           Console.ReadKey();
